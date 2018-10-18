@@ -1,0 +1,28 @@
+{
+  "name": "advancedprintsolutions",
+  "version": "1.0.0",
+  "description": "Website for advanced print solutions in Brookville,IN",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "advancedprintsolutions"
+  ],
+  "author": "Jamie Gobeille",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^6.1.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.6",
+    "nodemailer": "^4.6.8"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4",
+    "prettier": "1.14.3"
+  }
+}

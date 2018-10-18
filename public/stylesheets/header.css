@@ -1,0 +1,21 @@
+#logo {
+    width: 252px;
+    height: 139px;
+}
+
+.navbar-nav {
+    float: right;
+    text-align: center;
+    padding-right: 4em;
+    font-size: 20px;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+
+    padding-top: 5em;
+    padding-right: 5rem;
+    padding-left: 2rem;
+}
+
+

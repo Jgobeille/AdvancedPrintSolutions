@@ -1,0 +1,111 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+.d-block .w-100 {
+    height: 600px;
+    width: 100%;
+    padding-left: 0;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.welcome_section .wrap {
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+.welcome_section {
+    background: #42a1f4;
+    padding: 10px;
+}
+
+.wrap {
+    font-size: 1.6rem;
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 0 40px 0 0;
+    padding:30px;
+    font-weight:800;
+}
+
+.sales-pitch-text h4 {
+    font-size: 1.6rem;
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 0 40px 0 0;
+    font-weight: 900;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    margin-left: 100px;
+}
+
+
+
+.introduction_section {
+    background-color: #afafaf;
+    padding: 50px;
+}
+
+.sales-pitch-text p {
+    font-size: 1.6rem;
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 0 40px 0 0;
+    font-weight: 900;
+    line-height: 1.8;
+    margin-left: 100px;
+    
+}
+
+#cup{
+    height:300px;
+    width: 300px;
+    
+}
+
+
+.featured_products_section {
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+
+}
+
+.featured_products {
+    color: black;
+    margin-bottom: 30px;
+    font-weight: 900;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.card {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.card-text{
+    text-align: center;
+    font-weight: 900;
+    font-size: 24px;
+    
+}
+
+.card-body {
+    background-color: #42a1f4; 
+}
