@@ -47,6 +47,9 @@ app.get("/products", function(req, res) {
   res.render("products");
 });
 
+app.get("/services", function(req, res){
+  res.render("services");
+});
 
 
 
