@@ -43,6 +43,9 @@ app.get("/", function(req,res) {
     res.render("home");
 });
 
+app.get("/products", function(req, res) {
+  res.render("products");
+});
 
 
 
