@@ -51,7 +51,7 @@ a{
 }
 
 
-@media(max-width: 700px ){
+@media(max-width: 1000px ) {
     #footer-logo{
         display:none!important;
         display:block;
