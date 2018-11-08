@@ -1,8 +1,10 @@
-img {
-    height: 250px;
-    width: 100%;
+.product_image {
+    height: 300px;
+    width: 300px;
     margin-bottom: 10px;
     margin-top: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 6px -6px black;
    
 }
 
@@ -16,9 +18,8 @@ img {
 .thumbnail{
     display: block;
     margin-bottom: 50px;
-    border: 1px solid #ddd;
     padding-left: 50px;
-    box-shadow: 0 8px 6px -6px black;
+
 }
 
 @media (min-width: 1200px){

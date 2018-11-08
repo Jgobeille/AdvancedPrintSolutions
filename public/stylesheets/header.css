@@ -3,6 +3,7 @@
     height: 139px;
 }
 
+@media(min-width: 992px){
 .navbar-nav {
     float: right;
     text-align: center;
@@ -16,5 +17,5 @@
     padding-right: 5rem;
     padding-left: 2rem;
 }
-
+}
 
