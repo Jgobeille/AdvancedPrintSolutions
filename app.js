@@ -51,6 +51,10 @@ app.get("/services", function(req, res){
   res.render("services");
 });
 
+app.get("/about", function(req, res){
+  res.render("about");
+});
+
 
 
 

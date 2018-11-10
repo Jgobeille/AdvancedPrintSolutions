@@ -1,0 +1,49 @@
+.about_banner h1{
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #42a1f4;
+    font-size: 42px;
+    color: #fff;
+    font-weight: 700;
+}
+
+#company_image{
+    height:300px;
+    width:500px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    -moz-box-shadow:    0px 8px 6px -6px black;
+    -webkit-box-shadow: 0px 8px 6px -6px black;
+    box-shadow:         0px 8px 6px -6px black;
+    
+}
+
+.about_section {
+    text-align: left;
+    color: #555f77;
+    letter-spacing: 1px;
+    font-weight:600;
+    padding-bottom: 50px
+}
+
+h1 {
+    text-align:center;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 950px;
+}
+
+
+@media(max-width: 560px)  {
+    #company_image {
+        width: 100% ;
+    }
+}
