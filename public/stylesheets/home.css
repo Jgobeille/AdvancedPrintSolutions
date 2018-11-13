@@ -97,7 +97,18 @@ body {
 .card {
     margin-bottom: 50px;
     box-shadow: 0 8px 6px -2px black;
+    transition: all .2s;
+	transform: scale(1);
 }
+
+.card:hover {
+	color: white;
+	background: gray;
+	    -webkit-transform:scale(1.050);
+	transform:scale(1.050);
+}
+
+
 
 .card-text{
     text-align: center;
