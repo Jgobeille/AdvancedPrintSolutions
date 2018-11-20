@@ -61,6 +61,11 @@ app.get("/contact", function(req, res){
 
 
 
+//products pages
+app.get("/template", function(req, res){
+  res.render("template");
+});
+
 
 app.listen(process.env.PORT, process.env.IP, function(){
 console.log("The app has started!");
