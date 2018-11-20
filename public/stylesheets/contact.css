@@ -1,0 +1,50 @@
+.contact_banner h1{
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #42a1f4;
+    font-size: 42px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.where_section h1{
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #42a1f4;
+    font-size: 42px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+form {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #555f77;
+    letter-spacing: 1px;
+    font-weight:600;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+#contact_message{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+
+.btn-group-lg .btn, .btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    width: 150px;
+    margin-top:30px;
+    margin-bottom: 150px;
+}

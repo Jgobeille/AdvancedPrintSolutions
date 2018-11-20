@@ -155,7 +155,9 @@ body {
 
 /*Animations*/
 
-button{
+
+
+.button{
     border-radius: 4px;
     border: 3px solid #fff;
     color: #fff;
@@ -174,7 +176,7 @@ button{
     transition: all 0.3s;
 }
 
-button:after{
+.button:after{
     content: '';
     position: absolute;
     background-color: #afafaf;
@@ -184,7 +186,7 @@ button:after{
     transition: all 0.3s;
 }
 
-button:hover, button:active {
+.button:hover, button:active {
     color: #0e83cd;
     background: #fff;
 }
