@@ -1,21 +1,21 @@
-<% include partials/header.ejs %>
+<%- include("../partials/header.ejs") %>
 
-<html>
+
     <header>
         <title>
             <%=data.product%>
         </title>
-        <link rel="stylesheet" href="stylesheets/template.css">
+        <link rel="stylesheet" href="/stylesheets/template.css">
     </header>
     <body>
         <div class="banner">
             <h1><%=data.product%></h1>
         </div>
         <div class="container">
+            <div class = "page_body">
             <div class ="row">
                 <div class="col-md-6">
                 <div class="description">
-                    <h1><%=data.product%></h1>
                     <p><%=data.paragraphOne%></p>
                     <p><%=data.paragraphTwo%></p>
                     <p><%=data.paragraphThree%></p>
@@ -26,7 +26,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="thumbnail">
-                        <img src=<%= data.image%>>
+                        <img id="image" src=<%= data.image%>>
                     </div>
                      <div class="order-button" href = "/contact">
                         <a class="button"  href = "/contact"> GET A QUOTE NOW!</a>
@@ -34,8 +34,8 @@
                 </div>
             </div>
         </div>
-    </body>
+        </div>
+   </body>
 </html>
 
-
-<% include partials/footer.ejs%>
+<%- include("../partials/footer.ejs") %>

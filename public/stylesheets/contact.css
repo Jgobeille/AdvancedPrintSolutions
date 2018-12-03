@@ -23,7 +23,6 @@
 }
 
 form {
-    padding-top: 60px;
     padding-bottom: 60px;
     color: #555f77;
     letter-spacing: 1px;
@@ -49,4 +48,12 @@ form {
     margin-top:30px;
     margin-bottom: 150px;
     background-color: #42a1f4; 
+}
+
+.contact-form{
+    padding-top: 60px;
+    padding-bottom: 20px;
+    color: #555f77;
+    letter-spacing: 1px;
+    font-weight:600;
 }

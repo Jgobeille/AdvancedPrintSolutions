@@ -39,7 +39,7 @@ body {
     font-size: 1.6rem;
     color: #fff;
     letter-spacing: 1px;
-    padding:30px;
+    padding:50px;
     font-weight:800;
 }
 
@@ -87,7 +87,7 @@ body {
 
 .featured_products {
     color: black;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     font-weight: 900;
     line-height: 1.8;
     text-align: center;

@@ -11,23 +11,28 @@
     font-weight: 700;
 }
 
-.row{
+.page_body .row{
     margin-top: 100px;
     margin-bottom:100px;
 }
-img {
+#image {
     height: 600px;
     width: 100%;
+    
 }
 
-.description h1{
-    text-align: center;
-    text-decoration: underline;
-    padding-bottom: 20px;
-    letter-spacing: 1px;
+p {
+    padding: 10px;
 }
+
+
 
 /*button*/
+
+.order-button{
+    color:#fff;
+    text-align: center;
+}
 
 .button{
     margin-top: 60px;
@@ -59,7 +64,7 @@ img {
 .button:after{
     content: '';
     position: absolute;
-    background-color: #afafaf;
+    background-color: #42a1f4;
     z-index: -1;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -67,6 +72,6 @@ img {
 }
 
 .button:hover, button:active {
-    color: #0e83cd;
-    background: #fff;
+    color: #fff;
+    background: #42a1f4;
 }
