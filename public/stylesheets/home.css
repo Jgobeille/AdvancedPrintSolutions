@@ -3,6 +3,11 @@ body {
 
 }
 
+
+#bearcat-swag{
+    height: 200px;
+    width: 300px;
+}
 .container-fluid{
   padding-left: 0rem;
   padding-right: 0rem;
@@ -50,7 +55,6 @@ body {
     font-weight: 900;
     line-height: 1.8;
     margin-bottom: 30px;
-    margin-left: 100px;
 }
 
 
@@ -92,6 +96,7 @@ body {
     line-height: 1.8;
     text-align: center;
     margin-top: 30px;
+    font-size: 40px;
 }
 
 .card {
@@ -231,4 +236,34 @@ body {
     margin: 0 auto;
     
 }
+}
+
+@media(max-width: 1000px) {
+    #carouselExampleIndicators{
+        display: none;
+    }
+}
+
+@media(max-width: 991px) {
+    .navbar-collapse{
+        text-align: center;
+    }
+}
+
+@media(max-width: 700px) {
+    .featured_products_section .row{
+        padding: 0;
+    }
+    .card {
+        box-shadow: none;
+        transition: none;
+	    transform: none;
+
+    }
+    .card:hover {
+        color: black;
+	    background: gray;
+	    -webkit-transform: none;
+    }
+    
 }

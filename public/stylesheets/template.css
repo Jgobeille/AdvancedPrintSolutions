@@ -21,8 +21,11 @@
     
 }
 
-p {
+.description{
     padding: 10px;
+    color: #555f77;
+    letter-spacing: 1px;
+    font-weight:600;
 }
 
 

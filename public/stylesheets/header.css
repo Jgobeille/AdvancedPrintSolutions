@@ -6,16 +6,27 @@
 @media(min-width: 992px){
 .navbar-nav {
     float: right;
-    text-align: center;
     padding-right: 4em;
     font-size: 20px;
-}
-
+    text-align: center;
+    }
 
 .navbar-light .navbar-nav .nav-link {
     padding-top: 5em;
     padding-right: 5rem;
     padding-left: 2rem;
-}
+    }
 }
 
+@media(max-width: 992px){
+.navbar-nav {
+    text-align: center;
+    }
+}
+    
+@media(max-width: 991px){
+.nav-item{
+    font-size: 24px;
+    font-weight: 800;
+}
+}

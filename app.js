@@ -74,6 +74,29 @@ app.get("/contact", function(req, res){
 
 
 //products pages
+app.get("/productGallery/accessories", function(req, res){
+  var data = {product: "BUSINESS CARDS", image: "https://s3.us-east-2.amazonaws.com/midwestspray/spraymanv2.jpg", 
+  paragraphOne: `Lisa, vampires are make-believe, like elves, gremlins, and Eskimos. I'm going to the back seat of my car, <strong>with</strong> the woman I love, and I won't be back for ten minutes! …And the fluffy kitten played with that ball of string all through the night. On a lighter note, a Kwik-E-Mart clerk was brutally murdered last night.`,
+  paragraphTwo: "Kids, kids. I'm not going to die. That only happens to bad people. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. Fire can be our friend; whether it's toasting marshmallows or raining down on Charlie.",
+  paragraphThree: "This is the greatest case of false advertising I've seen since I sued the movie \"The Never Ending Story.\" Shoplifting is a victimless crime.</strong> <em> Like punching someone in the dark.</em> No children have ever meddled with the Republican Party and lived to tell about it.",
+  paragraphFour: "Lisa, vampires are make-believe, like elves, gremlins, and Eskimos. I'm going to the back seat of my car, with the woman I love, and I won't be back for ten minutes! …And the fluffy kitten played with that ball of string all through the night. On a lighter note, a Kwik-E-Mart clerk was brutally murdered last night.",
+  paragraphFive: "Kids, kids. I'm not going to die. That only happens to bad people. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. Fire can be our friend; whether it's toasting marshmallows or raining down on Charlie.",
+  paragraphSix: "This is the greatest case of false advertising I've seen since I sued the movie \"The Never Ending Story.\" Shoplifting is a victimless crime.</strong> <em> Like punching someone in the dark.</em> No children have ever meddled with the Republican Party and lived to tell about it."
+  };
+  res.render("products/accessories", {data: data});
+});
+
+app.get("/productGallery/apparel", function(req, res){
+  var data = {product: "BUSINESS CARDS", image: "https://s3.us-east-2.amazonaws.com/midwestspray/spraymanv2.jpg", 
+  paragraphOne: `Lisa, vampires are make-believe, like elves, gremlins, and Eskimos. I'm going to the back seat of my car, <strong>with</strong> the woman I love, and I won't be back for ten minutes! …And the fluffy kitten played with that ball of string all through the night. On a lighter note, a Kwik-E-Mart clerk was brutally murdered last night.`,
+  paragraphTwo: "Kids, kids. I'm not going to die. That only happens to bad people. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. Fire can be our friend; whether it's toasting marshmallows or raining down on Charlie.",
+  paragraphThree: "This is the greatest case of false advertising I've seen since I sued the movie \"The Never Ending Story.\" Shoplifting is a victimless crime.</strong> <em> Like punching someone in the dark.</em> No children have ever meddled with the Republican Party and lived to tell about it.",
+  paragraphFour: "Lisa, vampires are make-believe, like elves, gremlins, and Eskimos. I'm going to the back seat of my car, with the woman I love, and I won't be back for ten minutes! …And the fluffy kitten played with that ball of string all through the night. On a lighter note, a Kwik-E-Mart clerk was brutally murdered last night.",
+  paragraphFive: "Kids, kids. I'm not going to die. That only happens to bad people. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. Fire can be our friend; whether it's toasting marshmallows or raining down on Charlie.",
+  paragraphSix: "This is the greatest case of false advertising I've seen since I sued the movie \"The Never Ending Story.\" Shoplifting is a victimless crime.</strong> <em> Like punching someone in the dark.</em> No children have ever meddled with the Republican Party and lived to tell about it."
+  };
+  res.render("products/apparel", {data: data});
+});
 
 app.get("/productGallery/brochures", function(req, res){
   var data = {product: "BROCHURES", image: "https://s3.us-east-2.amazonaws.com/midwestspray/spraymanv2.jpg", 
@@ -99,6 +122,107 @@ app.get("/productGallery/business-cards", function(req, res){
   res.render("products/business-cards", {data: data});
 });
 
+app.get("/productGallery/calendars", function(req, res){
+  var data = {product: "BUSINESS CARDS", image: "https://s3.us-east-2.amazonaws.com/midwestspray/spraymanv2.jpg", 
+  paragraphOne: `Lisa, vampires are make-believe, like elves, gremlins, and Eskimos. I'm going to the back seat of my car, <strong>with</strong> the woman I love, and I won't be back for ten minutes! …And the fluffy kitten played with that ball of string all through the night. On a lighter note, a Kwik-E-Mart clerk was brutally murdered last night.`,
+  paragraphTwo: "Kids, kids. I'm not going to die. That only happens to bad people. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. Fire can be our friend; whether it's toasting marshmallows or raining down on Charlie.",
+  paragraphThree: "This is the greatest case of false advertising I've seen since I sued the movie \"The Never Ending Story.\" Shoplifting is a victimless crime.</strong> <em> Like punching someone in the dark.</em> No children have ever meddled with the Republican Party and lived to tell about it.",
+  paragraphFour: "Lisa, vampires are make-believe, like elves, gremlins, and Eskimos. I'm going to the back seat of my car, with the woman I love, and I won't be back for ten minutes! …And the fluffy kitten played with that ball of string all through the night. On a lighter note, a Kwik-E-Mart clerk was brutally murdered last night.",
+  paragraphFive: "Kids, kids. I'm not going to die. That only happens to bad people. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. Fire can be our friend; whether it's toasting marshmallows or raining down on Charlie.",
+  paragraphSix: "This is the greatest case of false advertising I've seen since I sued the movie \"The Never Ending Story.\" Shoplifting is a victimless crime.</strong> <em> Like punching someone in the dark.</em> No children have ever meddled with the Republican Party and lived to tell about it."
+  };
+  res.render("products/calendars", {data: data});
+});
+
+app.get("/productGallery/clothing-accessories", function(req, res){
+  var data = {product: "BUSINESS CARDS", image: "https://s3.us-east-2.amazonaws.com/midwestspray/spraymanv2.jpg", 
+  paragraphOne: `Lisa, vampires are make-believe, like elves, gremlins, and Eskimos. I'm going to the back seat of my car, <strong>with</strong> the woman I love, and I won't be back for ten minutes! …And the fluffy kitten played with that ball of string all through the night. On a lighter note, a Kwik-E-Mart clerk was brutally murdered last night.`,
+  paragraphTwo: "Kids, kids. I'm not going to die. That only happens to bad people. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. Fire can be our friend; whether it's toasting marshmallows or raining down on Charlie.",
+  paragraphThree: "This is the greatest case of false advertising I've seen since I sued the movie \"The Never Ending Story.\" Shoplifting is a victimless crime.</strong> <em> Like punching someone in the dark.</em> No children have ever meddled with the Republican Party and lived to tell about it.",
+  paragraphFour: "Lisa, vampires are make-believe, like elves, gremlins, and Eskimos. I'm going to the back seat of my car, with the woman I love, and I won't be back for ten minutes! …And the fluffy kitten played with that ball of string all through the night. On a lighter note, a Kwik-E-Mart clerk was brutally murdered last night.",
+  paragraphFive: "Kids, kids. I'm not going to die. That only happens to bad people. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. Fire can be our friend; whether it's toasting marshmallows or raining down on Charlie.",
+  paragraphSix: "This is the greatest case of false advertising I've seen since I sued the movie \"The Never Ending Story.\" Shoplifting is a victimless crime.</strong> <em> Like punching someone in the dark.</em> No children have ever meddled with the Republican Party and lived to tell about it."
+  };
+  res.render("products/clothing-accessories", {data: data});
+});
+
+app.get("/productGallery/drawstring-bag", function(req, res){
+  var data = {product: "BUSINESS CARDS", image: "https://s3.us-east-2.amazonaws.com/midwestspray/spraymanv2.jpg", 
+  paragraphOne: `Lisa, vampires are make-believe, like elves, gremlins, and Eskimos. I'm going to the back seat of my car, <strong>with</strong> the woman I love, and I won't be back for ten minutes! …And the fluffy kitten played with that ball of string all through the night. On a lighter note, a Kwik-E-Mart clerk was brutally murdered last night.`,
+  paragraphTwo: "Kids, kids. I'm not going to die. That only happens to bad people. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. Fire can be our friend; whether it's toasting marshmallows or raining down on Charlie.",
+  paragraphThree: "This is the greatest case of false advertising I've seen since I sued the movie \"The Never Ending Story.\" Shoplifting is a victimless crime.</strong> <em> Like punching someone in the dark.</em> No children have ever meddled with the Republican Party and lived to tell about it.",
+  paragraphFour: "Lisa, vampires are make-believe, like elves, gremlins, and Eskimos. I'm going to the back seat of my car, with the woman I love, and I won't be back for ten minutes! …And the fluffy kitten played with that ball of string all through the night. On a lighter note, a Kwik-E-Mart clerk was brutally murdered last night.",
+  paragraphFive: "Kids, kids. I'm not going to die. That only happens to bad people. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. Fire can be our friend; whether it's toasting marshmallows or raining down on Charlie.",
+  paragraphSix: "This is the greatest case of false advertising I've seen since I sued the movie \"The Never Ending Story.\" Shoplifting is a victimless crime.</strong> <em> Like punching someone in the dark.</em> No children have ever meddled with the Republican Party and lived to tell about it."
+  };
+  res.render("products/drawstring-bag", {data: data});
+});
+
+app.get("/productGallery/gift-set", function(req, res){
+  var data = {product: "BUSINESS CARDS", image: "https://s3.us-east-2.amazonaws.com/midwestspray/spraymanv2.jpg", 
+  paragraphOne: `Lisa, vampires are make-believe, like elves, gremlins, and Eskimos. I'm going to the back seat of my car, <strong>with</strong> the woman I love, and I won't be back for ten minutes! …And the fluffy kitten played with that ball of string all through the night. On a lighter note, a Kwik-E-Mart clerk was brutally murdered last night.`,
+  paragraphTwo: "Kids, kids. I'm not going to die. That only happens to bad people. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. Fire can be our friend; whether it's toasting marshmallows or raining down on Charlie.",
+  paragraphThree: "This is the greatest case of false advertising I've seen since I sued the movie \"The Never Ending Story.\" Shoplifting is a victimless crime.</strong> <em> Like punching someone in the dark.</em> No children have ever meddled with the Republican Party and lived to tell about it.",
+  paragraphFour: "Lisa, vampires are make-believe, like elves, gremlins, and Eskimos. I'm going to the back seat of my car, with the woman I love, and I won't be back for ten minutes! …And the fluffy kitten played with that ball of string all through the night. On a lighter note, a Kwik-E-Mart clerk was brutally murdered last night.",
+  paragraphFive: "Kids, kids. I'm not going to die. That only happens to bad people. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. Fire can be our friend; whether it's toasting marshmallows or raining down on Charlie.",
+  paragraphSix: "This is the greatest case of false advertising I've seen since I sued the movie \"The Never Ending Story.\" Shoplifting is a victimless crime.</strong> <em> Like punching someone in the dark.</em> No children have ever meddled with the Republican Party and lived to tell about it."
+  };
+  res.render("products/gift-set", {data: data});
+});
+
+app.get("/productGallery/hats", function(req, res){
+  var data = {product: "BUSINESS CARDS", image: "https://s3.us-east-2.amazonaws.com/midwestspray/spraymanv2.jpg", 
+  paragraphOne: `Lisa, vampires are make-believe, like elves, gremlins, and Eskimos. I'm going to the back seat of my car, <strong>with</strong> the woman I love, and I won't be back for ten minutes! …And the fluffy kitten played with that ball of string all through the night. On a lighter note, a Kwik-E-Mart clerk was brutally murdered last night.`,
+  paragraphTwo: "Kids, kids. I'm not going to die. That only happens to bad people. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. Fire can be our friend; whether it's toasting marshmallows or raining down on Charlie.",
+  paragraphThree: "This is the greatest case of false advertising I've seen since I sued the movie \"The Never Ending Story.\" Shoplifting is a victimless crime.</strong> <em> Like punching someone in the dark.</em> No children have ever meddled with the Republican Party and lived to tell about it.",
+  paragraphFour: "Lisa, vampires are make-believe, like elves, gremlins, and Eskimos. I'm going to the back seat of my car, with the woman I love, and I won't be back for ten minutes! …And the fluffy kitten played with that ball of string all through the night. On a lighter note, a Kwik-E-Mart clerk was brutally murdered last night.",
+  paragraphFive: "Kids, kids. I'm not going to die. That only happens to bad people. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. Fire can be our friend; whether it's toasting marshmallows or raining down on Charlie.",
+  paragraphSix: "This is the greatest case of false advertising I've seen since I sued the movie \"The Never Ending Story.\" Shoplifting is a victimless crime.</strong> <em> Like punching someone in the dark.</em> No children have ever meddled with the Republican Party and lived to tell about it."
+  };
+  res.render("products/hats", {data: data});
+});
+
+app.get("/productGallery/magnet-stickers", function(req, res){
+  var data = {product: "BUSINESS CARDS", image: "https://s3.us-east-2.amazonaws.com/midwestspray/spraymanv2.jpg", 
+  paragraphOne: `Lisa, vampires are make-believe, like elves, gremlins, and Eskimos. I'm going to the back seat of my car, <strong>with</strong> the woman I love, and I won't be back for ten minutes! …And the fluffy kitten played with that ball of string all through the night. On a lighter note, a Kwik-E-Mart clerk was brutally murdered last night.`,
+  paragraphTwo: "Kids, kids. I'm not going to die. That only happens to bad people. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. Fire can be our friend; whether it's toasting marshmallows or raining down on Charlie.",
+  paragraphThree: "This is the greatest case of false advertising I've seen since I sued the movie \"The Never Ending Story.\" Shoplifting is a victimless crime.</strong> <em> Like punching someone in the dark.</em> No children have ever meddled with the Republican Party and lived to tell about it.",
+  paragraphFour: "Lisa, vampires are make-believe, like elves, gremlins, and Eskimos. I'm going to the back seat of my car, with the woman I love, and I won't be back for ten minutes! …And the fluffy kitten played with that ball of string all through the night. On a lighter note, a Kwik-E-Mart clerk was brutally murdered last night.",
+  paragraphFive: "Kids, kids. I'm not going to die. That only happens to bad people. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. Fire can be our friend; whether it's toasting marshmallows or raining down on Charlie.",
+  paragraphSix: "This is the greatest case of false advertising I've seen since I sued the movie \"The Never Ending Story.\" Shoplifting is a victimless crime.</strong> <em> Like punching someone in the dark.</em> No children have ever meddled with the Republican Party and lived to tell about it."
+  };
+  res.render("products/magnet-stickers", {data: data});
+});
+
+app.get("/productGallery/mugs", function(req, res){
+  var data = {product: "BUSINESS CARDS", image: "https://s3.us-east-2.amazonaws.com/midwestspray/spraymanv2.jpg", 
+  paragraphOne: `Lisa, vampires are make-believe, like elves, gremlins, and Eskimos. I'm going to the back seat of my car, <strong>with</strong> the woman I love, and I won't be back for ten minutes! …And the fluffy kitten played with that ball of string all through the night. On a lighter note, a Kwik-E-Mart clerk was brutally murdered last night.`,
+  paragraphTwo: "Kids, kids. I'm not going to die. That only happens to bad people. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. Fire can be our friend; whether it's toasting marshmallows or raining down on Charlie.",
+  paragraphThree: "This is the greatest case of false advertising I've seen since I sued the movie \"The Never Ending Story.\" Shoplifting is a victimless crime.</strong> <em> Like punching someone in the dark.</em> No children have ever meddled with the Republican Party and lived to tell about it.",
+  paragraphFour: "Lisa, vampires are make-believe, like elves, gremlins, and Eskimos. I'm going to the back seat of my car, with the woman I love, and I won't be back for ten minutes! …And the fluffy kitten played with that ball of string all through the night. On a lighter note, a Kwik-E-Mart clerk was brutally murdered last night.",
+  paragraphFive: "Kids, kids. I'm not going to die. That only happens to bad people. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. Fire can be our friend; whether it's toasting marshmallows or raining down on Charlie.",
+  paragraphSix: "This is the greatest case of false advertising I've seen since I sued the movie \"The Never Ending Story.\" Shoplifting is a victimless crime.</strong> <em> Like punching someone in the dark.</em> No children have ever meddled with the Republican Party and lived to tell about it."
+  };
+  res.render("products/mugs", {data: data});
+});
+
+app.get("/productGallery/clothing-accessories", function(req, res){
+  var data = {product: "BUSINESS CARDS", image: "https://s3.us-east-2.amazonaws.com/midwestspray/spraymanv2.jpg", 
+  paragraphOne: `Lisa, vampires are make-believe, like elves, gremlins, and Eskimos. I'm going to the back seat of my car, <strong>with</strong> the woman I love, and I won't be back for ten minutes! …And the fluffy kitten played with that ball of string all through the night. On a lighter note, a Kwik-E-Mart clerk was brutally murdered last night.`,
+  paragraphTwo: "Kids, kids. I'm not going to die. That only happens to bad people. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. Fire can be our friend; whether it's toasting marshmallows or raining down on Charlie.",
+  paragraphThree: "This is the greatest case of false advertising I've seen since I sued the movie \"The Never Ending Story.\" Shoplifting is a victimless crime.</strong> <em> Like punching someone in the dark.</em> No children have ever meddled with the Republican Party and lived to tell about it.",
+  paragraphFour: "Lisa, vampires are make-believe, like elves, gremlins, and Eskimos. I'm going to the back seat of my car, with the woman I love, and I won't be back for ten minutes! …And the fluffy kitten played with that ball of string all through the night. On a lighter note, a Kwik-E-Mart clerk was brutally murdered last night.",
+  paragraphFive: "Kids, kids. I'm not going to die. That only happens to bad people. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. Fire can be our friend; whether it's toasting marshmallows or raining down on Charlie.",
+  paragraphSix: "This is the greatest case of false advertising I've seen since I sued the movie \"The Never Ending Story.\" Shoplifting is a victimless crime.</strong> <em> Like punching someone in the dark.</em> No children have ever meddled with the Republican Party and lived to tell about it."
+  };
+  res.render("products/clothing-accessories", {data: data});
+});
+
+
+
+
+
+
 
 
 //services Pages
@@ -113,6 +237,9 @@ app.get("/serviceGallery/something", function(req, res){
   };
   res.render("services/something", {data: data});
 });
+
+
+
 
 
 //Nodemailer
