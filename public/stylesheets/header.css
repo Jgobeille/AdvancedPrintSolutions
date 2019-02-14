@@ -1,19 +1,24 @@
+.nav-item{
+    font-size: 24px;
+    font-weight: 800;
+}
+
 #logo {
-    width: 252px;
-    height: 139px;
+    width: 40vh;
+    height: 25vh;
 }
 
 @media(min-width: 992px){
 .navbar-nav {
     float: right;
-    padding-right: 4em;
+    padding-right: 2em;
     font-size: 20px;
     text-align: center;
     }
 
 .navbar-light .navbar-nav .nav-link {
     padding-top: 5em;
-    padding-right: 5rem;
+    padding-right: 2.5rem;
     padding-left: 2rem;
     }
 }
@@ -22,11 +27,14 @@
 .navbar-nav {
     text-align: center;
     }
+.dropdown-item{
+    text-align: center;
+}
 }
     
-@media(max-width: 991px){
-.nav-item{
-    font-size: 24px;
-    font-weight: 800;
-}
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    
+    width: 72vh;
+    }
 }

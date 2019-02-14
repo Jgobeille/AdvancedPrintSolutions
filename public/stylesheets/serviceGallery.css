@@ -1,12 +1,14 @@
-.product_image {
+.service_image {
     height: 250px;
-    width: 300px;
+    max-width: 100%;
     margin-bottom: 10px;
     margin-top: 15px;
     border: 1px solid #ddd;
     box-shadow: 0 8px 6px -6px black;
+    
    
 }
+
 
 .services_section{
     max-width: 1000px;
@@ -20,7 +22,7 @@
     margin-bottom: 50px;
     text-align: center;
     
-
+    
 }
 
 @media (min-width: 1200px){
@@ -54,3 +56,10 @@ h1{
 .services_banner{
     margin-bottom: 50px;
 }
+
+@media(max-width: 575px){
+    .service_image {
+        width: auto;
+    }
+}
+
