@@ -80,10 +80,7 @@ body {
     align-items: center;
 }
 
-.featured_products_section .row{
-    padding-right: 50px;
-    padding-left: 50px;
-}
+
 
 
 
@@ -250,7 +247,7 @@ body {
 }
 
 @media(max-width: 700px) {
-    .featured_products_section .row{
+    .featured_products_section .container{
         padding: 0;
     }
     .card {
