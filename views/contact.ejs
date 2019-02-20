@@ -150,15 +150,23 @@
     //new map
     var map = new google.maps.Map(document.getElementById('map'), options);
     
+    //   var icon = {
+    //   url: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/googlemark.jpg",
+    //       scaledSize: new google.maps.Size(100, 100), // scaled size
+    // origin: new google.maps.Point(0,0), // origin
+    // anchor: new google.maps.Point(0, 0), // anchor
+    //     Opacity: .8,
+    // }
     //add marker
     var marker = new google.maps.Marker({
       position:{lat:39.422437, lng:-85.013052},
-      map: map //A value set equal to the var map
+      map: map, //A value set equal to the var map
+      // icon: icon,
     });
     
     var infoWindow = new google.maps.InfoWindow({
       content: '<h3>Advanced Print Solutions</h3> </br> <p>Address: 714 Main Street</p> <p>City: Brookville</p> <p>State: Indiana</p> <p>Zip Code: 47012</p> <a href ="/contact">Request a Quote!</a>'
-      
+    
     });
     
     marker.addListener('click', function(){

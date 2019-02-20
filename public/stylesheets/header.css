@@ -48,9 +48,9 @@ img {
     }
 }
 
-@media (min-width: 992px){
-.col-lg-4 {
-    flex: 0 0 50%; 
-    max-width: 50%;
-    }
-}
+/*@media (min-width: 992px){*/
+/*.col-lg-4 {*/
+/*    flex: 0 0 50%; */
+/*    max-width: 50%;*/
+/*    }*/
+/*}*/
