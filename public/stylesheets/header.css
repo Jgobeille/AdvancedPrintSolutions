@@ -1,5 +1,5 @@
 .nav-item{
-    font-size: 24px;
+    font-size: 6vh;
     font-weight: 800;
 }
 
@@ -22,11 +22,12 @@ img {
 @media(min-width: 992px){
 .navbar-nav {
     float: right;
-    font-size: 20px;
+    font-size: 3vh;
     text-align: center;
     }
 
 .navbar-light .navbar-nav .nav-link {
+    font-size: 4.5vh;
     padding-top: 5em;
     padding-left: 2rem;
     }
@@ -43,14 +44,6 @@ img {
     
 @media (min-width: 992px){
 .navbar-expand-lg .navbar-nav .dropdown-menu {
-    
-    width: 500px;
+    width: 1000px;
     }
 }
-
-/*@media (min-width: 992px){*/
-/*.col-lg-4 {*/
-/*    flex: 0 0 50%; */
-/*    max-width: 50%;*/
-/*    }*/
-/*}*/
