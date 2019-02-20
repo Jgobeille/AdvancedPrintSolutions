@@ -3,6 +3,12 @@ body {
 
 }
 
+.featured_products_section .container{
+    padding-left: 5%;
+     padding-right: 5%;
+}
+
+
 
 #bearcat-swag{
     height: 200px;
@@ -17,7 +23,7 @@ body {
 
 
 .d-block {
-    height:80vh;
+    height:600px;
 }
 
 
@@ -246,9 +252,10 @@ body {
     }
 }
 
-@media(max-width: 700px) {
+@media(max-width: 600px) {
     .featured_products_section .container{
         padding: 0;
+        max-width: 100%;
     }
     .card {
         box-shadow: none;
@@ -261,7 +268,6 @@ body {
 	    background: gray;
 	    -webkit-transform: none;
     }
-    
 }
 
 
@@ -308,5 +314,5 @@ body {
 }
 
 .card-img-top {
-    height: 50vh;
+    height: 350px;
 }

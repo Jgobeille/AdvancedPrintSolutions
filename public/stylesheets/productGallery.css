@@ -5,8 +5,11 @@
     margin-top: 15px;
     border: 1px solid #ddd;
     box-shadow: 0 8px 6px -6px black;
+    margin: auto;
    
 }
+
+
 
 .products_section{
     max-width: 1000px;

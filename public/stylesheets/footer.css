@@ -5,6 +5,8 @@ footer {
 
 
 
+
+
 footer .wrap {
     display: -ms-flexbox;
     display: flex;
@@ -17,8 +19,7 @@ footer .wrap {
 }
 
 #footer-logo{
-    height:80%;
-    width: 80%;
+    width: 150px;
 }
 
 .content-label{
