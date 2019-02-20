@@ -6,7 +6,7 @@
     align-items: center;
     padding: 50px;
     background-color: #42a1f4;
-    font-size: 7vh;
+    font-size: 42px;
     color: #fff;
     font-weight: 700;
 }
@@ -31,8 +31,7 @@
     color: #555f77;
     letter-spacing: 1px;
     font-weight:600;
-    padding-bottom: 50px;
-    font-size: 4vh;
+    padding-bottom: 50px
 }
 
 h1 {

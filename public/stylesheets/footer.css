@@ -23,7 +23,7 @@ footer .wrap {
 }
 
 .content-label{
-    font-size: 4vh;
+    font-size: 1.2em;
     margin-bottom: 10px;
     font-weight: 800;
     list-style: none;
@@ -44,11 +44,10 @@ footer .wrap {
 a{
     text-decoration: none!important;
     color:black;
-    font-size: 3vh;
 }
 
 .contact-information{
-    font-size: 2vh;
+    font-size: 10px;
     margin-top: 10px;
 }
 

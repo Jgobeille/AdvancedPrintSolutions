@@ -1,5 +1,5 @@
 .nav-item{
-    font-size: 6vh;
+    font-size: 24px;
     font-weight: 800;
 }
 
@@ -22,12 +22,11 @@ img {
 @media(min-width: 992px){
 .navbar-nav {
     float: right;
-    font-size: 3vh;
+    font-size: 20px;
     text-align: center;
     }
 
 .navbar-light .navbar-nav .nav-link {
-    font-size: 4.5vh;
     padding-top: 5em;
     padding-left: 2rem;
     }
@@ -44,6 +43,8 @@ img {
     
 @media (min-width: 992px){
 .navbar-expand-lg .navbar-nav .dropdown-menu {
-    width: 1000px;
+    
+    width: 500px;
     }
 }
+
