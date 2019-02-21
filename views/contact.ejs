@@ -145,23 +145,24 @@
     //map options
     var options = {
       zoom:9,
-      center:{lat:39.422437, lng: -85.013052}
+      center:{lat:39.452437, lng: -85.013052}
     }
     //new map
     var map = new google.maps.Map(document.getElementById('map'), options);
     
-    //   var icon = {
-    //   url: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/googlemark.jpg",
-    //       scaledSize: new google.maps.Size(100, 100), // scaled size
+      var icon = {
+        
+      url: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/googlemark.png", //Art by AJ Kelly.
+          scaledSize: new google.maps.Size(200, 150), // scaled size
     // origin: new google.maps.Point(0,0), // origin
     // anchor: new google.maps.Point(0, 0), // anchor
-    //     Opacity: .8,
-    // }
+    scale: 2
+    }
     //add marker
     var marker = new google.maps.Marker({
       position:{lat:39.422437, lng:-85.013052},
       map: map, //A value set equal to the var map
-      // icon: icon,
+      icon: icon,
     });
     
     var infoWindow = new google.maps.InfoWindow({

@@ -8,7 +8,12 @@ body {
      padding-right: 5%;
 }
 
-z
+#card {
+    object-fit: cover;
+}
+#pen {
+    object-fit: contain;
+}
 
 #bearcat-swag{
     height: 200px;
@@ -24,8 +29,11 @@ z
 
 
 .d-block {
-    height:600px;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: cover;
+    
+     
 }
 
 
@@ -254,7 +262,7 @@ z
     }
 }
 
-@media(max-width: 600px) {
+@media(max-width: 500px) {
     .featured_products_section .container{
         padding: 0;
         max-width: 100%;
