@@ -3,10 +3,10 @@ body {
 
 }
 
-.featured_products_section .container{
-    padding-left: 5%;
-     padding-right: 5%;
-}
+/*.featured_products_section .container{*/
+/*    padding-left: 5%;*/
+/*     padding-right: 5%;*/
+/*}*/
 
 #card {
     object-fit: cover;
