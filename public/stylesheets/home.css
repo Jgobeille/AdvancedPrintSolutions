@@ -250,11 +250,11 @@ body {
 }
 }
 
-/*@media(max-width: 1000px) {*/
-/*    #carouselExampleIndicators{*/
-/*        display: none;*/
-/*    }*/
-/*}*/
+@media(max-width: 1000px) {
+    #carouselExampleIndicators{
+        display: none;
+    }
+}
 
 @media(max-width: 991px) {
     .navbar-collapse{
