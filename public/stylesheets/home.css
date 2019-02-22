@@ -8,7 +8,7 @@ body {
 /*     padding-right: 5%;*/
 /*}*/
 
-#card {
+.cover {
     object-fit: cover;
 }
 #pen {
