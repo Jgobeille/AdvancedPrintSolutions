@@ -113,7 +113,7 @@ body {
 
 .card {
     margin-bottom: 50px;
-    box-shadow: 0 8px 6px -2px black;
+    box-shadow: 0 8px 6px -6px black;
     transition: all .2s;
 	transform: scale(1);
 }

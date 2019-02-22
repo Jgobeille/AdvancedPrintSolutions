@@ -5,8 +5,7 @@
     margin-top: 15px;
     border: 1px solid #ddd;
     box-shadow: 0 8px 6px -6px black;
-    margin: auto;
-    object-fit: contain;
+
     
    
 }
@@ -39,7 +38,7 @@ h5{
  margin-left: auto;
  margin-right: auto;
  padding:10px;
- font-size: 4vh;
+ font-size: 24px;
  font-weight: 900;
  color:#42a1f4;
 }
@@ -52,7 +51,7 @@ h1{
     text-align: center;
     padding: 50px;
     background-color: #42a1f4;
-    font-size: 4vh;
+    font-size: 42px;
     color: #fff;
     font-weight: 700;
 }
