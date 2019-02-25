@@ -148,7 +148,7 @@ app.get("/productGallery/notebooks", function(req, res){
 });
 
 app.get("/productGallery/office-supplies", function(req, res){
-  var data = {product: "OFFICE SUPPLIES", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/2953_BLK_Propped_Blank+mouse+pad+website.jpg",
+  var data = {product: "OFFICE PRODUCTS", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/2953_BLK_Propped_Blank+mouse+pad+website.jpg",
   };
   res.render("products/office-supplies", {data: data ,tag: tag});
 });
