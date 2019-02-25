@@ -148,7 +148,7 @@ app.get("/productGallery/notebooks", function(req, res){
 });
 
 app.get("/productGallery/office-supplies", function(req, res){
-  var data = {product: "OFFICE SUPPLIES", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/Mouse+Pad-min.jpg",
+  var data = {product: "OFFICE SUPPLIES", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/2953_BLK_Propped_Blank+mouse+pad+website.jpg",
   };
   res.render("products/office-supplies", {data: data ,tag: tag});
 });
@@ -302,12 +302,6 @@ app.get("/serviceGallery/laser-engraving", function(req, res){
 });
 
 
-app.get("/serviceGallery/lead-generation", function(req, res){
-  var data = {product: "LEAD GENERATION", image:"https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/services+min/image-from-rawpixel-id-344411-jpeg-min.jpg", 
-  };
-  res.render("services/lead-generation", {data: data ,tag: tag});
-});
-
 
 
 app.get("/serviceGallery/logo-design", function(req, res){
@@ -372,7 +366,7 @@ let transporter = nodemailer.createTransport({
         port: 465,
         secure: true, // true for 465, false for other ports
         auth: {
-            user: "mail@advancedprintsolutions.net", // generated ethereal user
+            user: "advancedprintsolutions@cincytechblog.com", // generated ethereal user
             pass: "Bengals2020" // generated ethereal password
         },
         tls: {
@@ -382,8 +376,8 @@ let transporter = nodemailer.createTransport({
 
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"Nodemailer Contact" <midwestspray@cincytechblog.com></br> Embedded image: <img src="cid:batman"/>', // sender address
-        to: 'midwestspray@cincytechblog.com', // list of receivers
+        from: '"Nodemailer Contact" <advancedprintsolutions@cincytechblog.com></br> Embedded image: <img src="cid:batman"/>', // sender address
+        to: 'advancedprintsolutions@cincytechblog.com', // list of receivers
         subject: 'New Request', // Subject line
         text: 'You have a new request', // plain text body
         html: output, // html body
