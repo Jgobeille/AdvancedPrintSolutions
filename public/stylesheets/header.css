@@ -43,6 +43,7 @@
     }
 .dropdown-item{
     text-align: center;
+    display: block;
 }
 }
     
