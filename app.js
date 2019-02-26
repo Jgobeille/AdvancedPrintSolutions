@@ -148,7 +148,7 @@ app.get("/productGallery/notebooks", function(req, res){
 });
 
 app.get("/productGallery/office-supplies", function(req, res){
-  var data = {product: "OFFICE PRODUCTS", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/2953_BLK_Propped_Blank+mouse+pad+website.jpg",
+  var data = {product: "OFFICE SUPPLIES", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/2953_BLK_Propped_Blank+mouse+pad+website.jpg",
   };
   res.render("products/office-supplies", {data: data ,tag: tag});
 });
@@ -214,7 +214,7 @@ app.get("/serviceGallery/ad-design", function(req, res){
 
 
 app.get("/serviceGallery/brand-identity", function(req, res){
-  var data = {product: "BRAND IDENTITY", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/services+min/brand+identity-min.jpg", 
+  var data = {product: "BRAND IDENTITY", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/new+size+service+photos/BIZ_Color_no_background_1-1_500x300.jpg", 
   };
   res.render("services/brand-identity", {data: data ,tag: tag});
 });
@@ -226,7 +226,7 @@ app.get("/serviceGallery/commercial-printing", function(req, res){
 });
 
 app.get("/serviceGallery/copies", function(req, res){
-  var data = {product: "COPIES", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/services+min/image-from-rawpixel-id-393470-jpeg-min.jpg", 
+  var data = {product: "COPIES", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/new+size+service+photos/image-from-rawpixel-id-436267-jpeg_500x300.jpg", 
   };
   res.render("services/copies", {data: data ,tag: tag});
 });
@@ -305,7 +305,7 @@ app.get("/serviceGallery/laser-engraving", function(req, res){
 
 
 app.get("/serviceGallery/logo-design", function(req, res){
-  var data = {product: "LOGO DESIGN", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/services+min/image-from-rawpixel-id-389101-jpeg-min.jpg", 
+  var data = {product: "LOGO DESIGN", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/RotoRooter_Logo_pdf_embrodiery_art_for_polos_9-26-16-1_500x300.jpg", 
   };
   res.render("services/logo-design", {data: data ,tag: tag});
 });
