@@ -75,56 +75,56 @@ const tag = {tagLine: "Ready for a quote? send us a message and we will get back
 
 //products pages
 app.get("/productGallery/accessories", function(req, res){
-  var data = {product: "ACCESSORIES", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/Accessories-min.jpg"};
+  var data = {product: "ACCESSORIES", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/Accessories-min+(Custom).jpg"};
   
   res.render("products/accessories", {data: data ,tag: tag});
 });
 
 app.get("/productGallery/apparel", function(req, res){
-  var data = {product: "APPAREL", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/apparel-min.jpg", 
+  var data = {product: "APPAREL", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/apparel-min+(Custom).jpg", 
   };
   res.render("products/apparel", {data: data ,tag: tag});
 });
 
 app.get("/productGallery/brochures", function(req, res){
-  var data = {product: "BROCHURES", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/brochures.jpg", 
+  var data = {product: "BROCHURES", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/brochures+(Custom).jpg", 
   };
   res.render("products/brochures", {data: data ,tag: tag});
 });
 
 app.get("/productGallery/business-cards", function(req, res){
-  var data = {product: "BUSINESS CARDS", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/business-cards-min.jpg", 
+  var data = {product: "BUSINESS CARDS", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/business-cards-min+(Custom).jpg", 
 
   };
   res.render("products/business-cards", {data: data ,tag: tag});
 });
 
 app.get("/productGallery/calendars", function(req, res){
-  var data = {product: "CALENDARS", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/MAGNET-HOUSE_group_a-min.jpg", 
+  var data = {product: "CALENDARS", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/Calendar-min+(Custom).jpg", 
   };
   res.render("products/calendars", {data: data ,tag: tag});
 });
 
 app.get("/productGallery/clothing-accessories", function(req, res){
-  var data = {product: "CLOTHING ACCESSORIES", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/uncompressed+files/Scarf.jpg", 
+  var data = {product: "CLOTHING ACCESSORIES", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/Scarf-min+(Custom).jpg", 
   };
   res.render("products/clothing-accessories", {data: data ,tag: tag});
 });
 
 app.get("/productGallery/bags", function(req, res){
-  var data = {product: "BAGS", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/backpacks-min.jpg", 
+  var data = {product: "BAGS", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/drawstring%2Bbag-min+(Custom).jpg", 
   };
   res.render("products/bags", {data: data ,tag: tag});
 });
 
 app.get("/productGallery/gift-set", function(req, res){
-  var data = {product: "GIFT SET", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/gift+set-min.jpg"
+  var data = {product: "GIFT SET", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/Gift%2BSet-min+(Custom).jpg"
   };
   res.render("products/gift-set", {data: data ,tag: tag});
 });
 
 app.get("/productGallery/hats", function(req, res){
-  var data = {product: "HATS", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/Hat-min.jpg"
+  var data = {product: "HATS", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/Hat-min+(Custom).jpg"
   };
   res.render("products/hats", {data: data ,tag: tag});
 });
@@ -136,62 +136,62 @@ app.get("/productGallery/magnets-stickers", function(req, res){
 });
 
 app.get("/productGallery/mugs", function(req, res){
-  var data = {product: "MUGS", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/Ceramic+Mug-min.jpg", 
+  var data = {product: "MUGS", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/Ceramic%2BMug-min+(Custom).jpg", 
   };
   res.render("products/mugs", {data: data ,tag: tag});
 });
 
 app.get("/productGallery/notebooks", function(req, res){
-  var data = {product: "NOTEBOOKS", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/notebooks-min.jpg", 
+  var data = {product: "NOTEBOOKS", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/Notebook-min+(Custom).jpg", 
   };
   res.render("products/notebooks", {data: data ,tag: tag});
 });
 
 app.get("/productGallery/office-supplies", function(req, res){
-  var data = {product: "OFFICE SUPPLIES", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/2953_BLK_Propped_Blank+mouse+pad+website.jpg",
+  var data = {product: "OFFICE PRODUCTS", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/2953_BLK_Propped_Blank%2Bmouse%2Bpad%2Bwebsite+(Custom).jpg",
   };
   res.render("products/office-supplies", {data: data ,tag: tag});
 });
 
 app.get("/productGallery/outdoor-leisure", function(req, res){
-  var data = {product: "OUTDOOR LEISURE", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/Outdoor+%26+Leisure-min.jpg", 
+  var data = {product: "OUTDOOR LEISURE", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/Outdoor%2B%26%2BLeisure-min+(Custom).jpg", 
   };
   res.render("products/outdoor-leisure", {data: data ,tag: tag});
 });
 
 app.get("/productGallery/pens", function(req, res){
-  var data = {product: "PENS", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/Pen-min.jpg", 
+  var data = {product: "PENS", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/Pen-min+(Custom).jpg", 
   };
   res.render("products/pens", {data: data ,tag: tag});
 });
 
 app.get("/productGallery/special-packaging", function(req, res){
-  var data = {product: "SPECIAL PACKAGING", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/uncompressed+files/Special+Packaging.jpg", 
+  var data = {product: "SPECIAL PACKAGING", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/Special%2BPackaging-min+(Custom).jpg", 
   };
   res.render("products/special-packaging", {data: data ,tag: tag});
 });
 
 app.get("/productGallery/sunglasses", function(req, res){
-  var data = {product: "SUNGLASSES", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/Sunglasses-min.jpg", 
+  var data = {product: "SUNGLASSES", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/Sunglasses-min+(Custom).jpg", 
   };
   res.render("products/sunglasses", {data: data ,tag: tag});
 });
 
 
 app.get("/productGallery/toys", function(req, res){
-  var data = {product: "TOYS", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/spinner-min.jpg", 
+  var data = {product: "TOYS", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/spinner-min+(Custom).jpg", 
   };
   res.render("products/toys", {data: data ,tag: tag});
 });
 
 app.get("/productGallery/tumblers", function(req, res){
-  var data = {product: "TUMBLERS", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/5790_ROSEGOLD_Silkscreen-min.jpg", 
+  var data = {product: "TUMBLERS", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/Tumbler-min+(Custom).jpg", 
   };
   res.render("products/tumblers", {data: data ,tag: tag});
 });
 
 app.get("/productGallery/usb-flashdrive", function(req, res){
-  var data = {product: "USB FLASHDRIVES", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/USB+Flashdrive-min.jpg", 
+  var data = {product: "USB FLASHDRIVES", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/USB%2BFlashdrive-min+(Custom).jpg", 
   };
   res.render("products/usb-flashdrive", {data: data ,tag: tag});
 });
@@ -207,26 +207,26 @@ app.get("/productGallery/usb-flashdrive", function(req, res){
 
 //services Pages
 app.get("/serviceGallery/ad-design", function(req, res){
-  var data = {product: "AD DESIGN", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/services+min/Optimized-ad-design-min.jpg", 
+  var data = {product: "AD DESIGN", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/Optimized-ad-design-min_500x300+(Custom).jpg", 
   };
   res.render("services/ad-design", {data: data ,tag: tag});
 });
 
 
 app.get("/serviceGallery/brand-identity", function(req, res){
-  var data = {product: "BRAND IDENTITY", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/new+size+service+photos/BIZ_Color_no_background_1-1_500x300.jpg", 
+  var data = {product: "BRAND IDENTITY", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/BIZ_Color_no_background_1-1_500x300+(Custom).jpg", 
   };
   res.render("services/brand-identity", {data: data ,tag: tag});
 });
 
 app.get("/serviceGallery/commercial-printing", function(req, res){
-  var data = {product: "COMMERCIAL PRINTING", image: "https://s3.us-east-2.amazonaws.com/midwestspray/APS/digital-printing.jpg", 
+  var data = {product: "COMMERCIAL PRINTING", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/digital-printing_2_500x300+(Custom).jpg", 
   };
   res.render("services/commercial-printing", {data: data ,tag: tag});
 });
 
 app.get("/serviceGallery/copies", function(req, res){
-  var data = {product: "COPIES", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/new+size+service+photos/image-from-rawpixel-id-436267-jpeg_500x300.jpg", 
+  var data = {product: "COPIES", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/image-from-rawpixel-id-436267-jpeg_500x300+(Custom).jpg", 
   };
   res.render("services/copies", {data: data ,tag: tag});
 });
@@ -240,28 +240,28 @@ app.get("/serviceGallery/digital-printing", function(req, res){
 
 
 app.get("/serviceGallery/direct-mail", function(req, res){
-  var data = {product: "DIRECT MAIL", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/services+min/image-from-rawpixel-id-531776-jpeg-min.jpg", 
+  var data = {product: "DIRECT MAIL", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/image-from-rawpixel-id-531776-jpeg-min_500x300+(Custom).jpg", 
   };
   res.render("services/direct-mail", {data: data ,tag: tag});
 });
 
 
 app.get("/serviceGallery/embossing", function(req, res){
-  var data = {product: "EMBOSSING", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/embossing-min.jpg", 
+  var data = {product: "EMBOSSING", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/embossing-min_500x300+(Custom).jpg", 
   };
   res.render("services/embossing", {data: data ,tag: tag});
 });
 
 
 app.get("/serviceGallery/finishing", function(req, res){
-  var data = {product: "FINISHING", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/finishing.jpg", 
+  var data = {product: "FINISHING", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/finishing_500x300+(Custom).jpg", 
   };
   res.render("services/finishing", {data: data ,tag: tag});
 });
 
 
 app.get("/serviceGallery/foil-stamping", function(req, res){
-  var data = {product: "FOIL STAMPING", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/foil-stamping-min.jpg", 
+  var data = {product: "FOIL STAMPING", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/foil-stamping-min_500x300+(Custom).jpg", 
   };
   res.render("services/foil-stamping", {data: data ,tag: tag});
 });
@@ -275,28 +275,28 @@ app.get("/serviceGallery/folding", function(req, res){
 
 
 app.get("/serviceGallery/graphic-design", function(req, res){
-  var data = {product: "GRAPHIC DESIGN", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/services+min/Optimized-apple-computer-design-326501-min.jpg", 
+  var data = {product: "GRAPHIC DESIGN", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/Optimized-apple-computer-design-326501-min_1_500x300+(Custom).jpg", 
   };
   res.render("services/graphic-design", {data: data ,tag: tag});
 });
 
 
 app.get("/serviceGallery/infographics", function(req, res){
-  var data = {product: "INFOGRAPHICS", image:"https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/services+min/image-from-rawpixel-id-44401-jpeg-min.jpg", 
+  var data = {product: "INFOGRAPHICS", image:"https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/samsung_samsung_galaxy_galaxy_500x300+(Custom).jpg", 
   };
   res.render("services/infographics", {data: data ,tag: tag});
 });
 
 
 app.get("/serviceGallery/large-format-printing", function(req, res){
-  var data = {product: "LARGE FORMAT", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/large-format-printing-min.jpg", 
+  var data = {product: "LARGE FORMAT", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/large-format-printing-min_500x300+(Custom).jpg", 
   };
   res.render("services/large-format-printing", {data: data ,tag: tag});
 });
 
 
 app.get("/serviceGallery/laser-engraving", function(req, res){
-  var data = {product: "LASER ENGRAVING", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/services+min/laser-engraving-min.jpg", 
+  var data = {product: "LASER ENGRAVING", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/laser-engraving-min_500x300+(Custom).jpg", 
   };
   res.render("services/laser-engraving", {data: data ,tag: tag});
 });
@@ -305,21 +305,21 @@ app.get("/serviceGallery/laser-engraving", function(req, res){
 
 
 app.get("/serviceGallery/logo-design", function(req, res){
-  var data = {product: "LOGO DESIGN", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/RotoRooter_Logo_pdf_embrodiery_art_for_polos_9-26-16-1_500x300.jpg", 
+  var data = {product: "LOGO DESIGN", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/RotoRooter_Logo_pdf_embrodiery_art_for_polos_9-26-16-1_500x300+(Custom).jpg", 
   };
   res.render("services/logo-design", {data: data ,tag: tag});
 });
 
 
 app.get("/serviceGallery/photo-enlargement", function(req, res){
-  var data = {product: "PHOTO ENLARGEMENT", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/services+min/alone-art-art-gallery-748778-min.jpg", 
+  var data = {product: "PHOTO ENLARGEMENT", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/alone-art-art-gallery-748778-min_1_500x300+(Custom).jpg", 
   };
   res.render("services/photo-enlargement", {data: data ,tag: tag});
 });
 
 
 app.get("/serviceGallery/scanning", function(req, res){
-  var data = {product: "SCANNING", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/scanning-min.jpg", 
+  var data = {product: "SCANNING", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/scanning-min_500x300+(Custom).jpg", 
   };
   res.render("services/scanning", {data: data ,tag: tag});
 });
