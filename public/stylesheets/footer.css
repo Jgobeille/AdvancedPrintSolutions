@@ -4,7 +4,11 @@ footer {
 }
 
 
-
+@media(max-width: 767){
+.content-list {
+    text-align: center;
+    }
+}
 
 
 footer .wrap {
@@ -32,6 +36,7 @@ footer .wrap {
 .content-list{
     margin-top: 20px;
     list-style: none;
+    text-align: center;
 }
 
 .list-item{
@@ -61,14 +66,7 @@ a{
 }
 
 
-@media(max-width: 700px ){
-    .col{
-    margin:0 auto;
-    display: block;
-    text-align: center;
 
-}
-}
 
 
 @media(max-width: 1000px){
@@ -76,3 +74,4 @@ footer .row .col:nth-child(1){
     display:none;
 }
 }
+
