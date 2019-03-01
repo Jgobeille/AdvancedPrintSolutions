@@ -7,6 +7,9 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const session    = require('express-session');
 const flash      = require('connect-flash');
+const ejs        = require('ejs');
+const multer     = require('multer');
+const path       = require('path');
 
 
 
@@ -326,16 +329,44 @@ app.get("/serviceGallery/scanning", function(req, res){
 
 
 
+//multer
+const storage = multer.diskStorage({
+  destination: './public/uploads/',
+  filename: function(req, file, cb){
+    cb(null,file.fieldname + '-' + Date.now() + path.extname(file.originalname));
+  }
+});
 
+//init upload
+const upload = multer({
+  storage: storage,
+  limits:{filesize: 10000},
+  filefilter: function(req, file, cb){
+    checkFileType(file, cb);
+  }
+}).single('attachFile1');
 
-
-
-
+//check file type
+function checkFileType(file, cb){
+  //allowed extensions
+  const filetypes = /jpeg|jpg|png|gif/;
+  //check ext
+  const extname =filetypes.test(path.extname(file.originalname).toLowerCase());
+  //check mime
+  const mimetpe = filetypes.test(file.mimetype);
+  
+  if(mimetype && extname){
+    return cb(null, true)
+  } else {
+    cb('Error: Images Only!');
+  }
+}
 
 
 //Nodemailer
-app.post('/send', function(req, res){
-  let output = `
+app.post('/send', upload, function(req, res){
+
+  const output = `
   <p>You have a new contact request</p>
     <h3>Contact Details</h3>
     <ul>
@@ -347,15 +378,16 @@ app.post('/send', function(req, res){
         <li> State: ${req.body.state}</li>
         <li> Zip Code: ${req.body.zipCode}</li>
         <li> Email: ${req.body.email}</li>
-        <li> Attached File 1: ${req.body.attachFile1}</li>
-        <li> Attach FIle 2: ${req.body.attachFile2}</li>
+
+
         
     </ul>
     <h3> Message:</h3>
     <p> ${req.body.message}</p>
 `;
-console.log(req.body)
-    ;
+// console.log(req.body);
+// console.log(req.file);
+
     
 
 
@@ -381,11 +413,12 @@ let transporter = nodemailer.createTransport({
         subject: 'New Request', // Subject line
         text: 'You have a new request', // plain text body
         html: output, // html body
-    //     attachments: [{
-    //     filename: 'batman.jpeg',
-    //     content: fs.createReadStream(req.body.attachFile1.path),
-    //     cid: 'batman' //same cid value as in the html img src
-    // }]
+        attachments: [
+          {
+        filename: req.file.filename,
+        path: req.file.path
+          }
+          ]
         
     };
 
