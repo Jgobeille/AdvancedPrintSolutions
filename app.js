@@ -308,7 +308,7 @@ app.get("/serviceGallery/laser-engraving", function(req, res){
 
 
 app.get("/serviceGallery/logo-design", function(req, res){
-  var data = {product: "LOGO DESIGN", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/RotoRooter_Logo_pdf_embrodiery_art_for_polos_9-26-16-1_500x300+(Custom).jpg", 
+  var data = {product: "LOGO DESIGN", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/Aztec+Services++Recovery+LOGO+(1)+(Custom).jpg", 
   };
   res.render("services/logo-design", {data: data ,tag: tag});
 });
