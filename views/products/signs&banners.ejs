@@ -1,0 +1,42 @@
+<%- include("../partials/header.ejs") %>
+
+
+    <header>
+        <title>
+            <%=data.product%>
+        </title>
+        <link rel="stylesheet" href="/stylesheets/template.css">
+    </header>
+    <body>
+        <div class="banner">
+            <h1><%=data.product%></h1>
+        </div>
+        <div class="container">
+            <div class = "page_body">
+            <div class ="row">
+                <div class="col-md-6">
+                    <div class="headline">
+                        <h3> Advanced Print Solutions guarantees 100% satisfaction for all our products and services!</h3>
+                    </div>
+                <div class="description">
+                    <p>Signs are an important aspect of your company. If done incorrectly, it can portray the wrong image of your company. 
+                       That is why we at Advanced print solutions take great pride in making beautiful, professional, and accurate signs to showcase your company!  
+                    </p>
+                    <p id="tag"><%=tag.tagLine%></p>
+                </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="thumbnail">
+                        <img id="image" src=<%= data.image%>>
+                    </div>
+                     <div class="order-button" href = "/contact">
+                        <a class="button"  href = "/contact"> GET A QUOTE NOW!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+   </body>
+</html>
+
+<%- include("../partials/footer.ejs") %>

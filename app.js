@@ -168,6 +168,12 @@ app.get("/productGallery/pens", function(req, res){
   res.render("products/pens", {data: data ,tag: tag});
 });
 
+app.get("/productGallery/signs&banners" ,  (req, res) => {
+  var data = {product: "SIGNS & BANNERS", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/corrugated_board_landing_image_med_500x500.png", 
+  };
+  res.render("products/signs&banners", {data: data ,tag: tag});
+});
+
 app.get("/productGallery/special-packaging", function(req, res){
   var data = {product: "SPECIAL PACKAGING", image: "https://s3.us-east-2.amazonaws.com/advancedprintsolutionsmedia/500x500+Pictures/Special%2BPackaging-min+(Custom).jpg", 
   };
