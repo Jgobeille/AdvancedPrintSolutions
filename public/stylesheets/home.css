@@ -20,6 +20,7 @@ body {
     width: 300px;
 }
 .container-fluid{
+  
   padding-left: 0rem;
   padding-right: 0rem;
   overflow: hidden;
@@ -47,10 +48,10 @@ body {
 .welcome_section {
     background: #42a1f4;
     padding: 10px;
-    display: flex;
-    -ms-flex-pack: center;
+    
+    
     justify-content: center;
-    -ms-flex-align: center;
+    
     align-items: center;
 }
 
@@ -89,10 +90,10 @@ body {
 
 
 .featured_products_section {
-    display: flex;
-    -ms-flex-pack: center;
+
+    
     justify-content: center;
-    -ms-flex-align: center;
+    
     align-items: center;
 }
 

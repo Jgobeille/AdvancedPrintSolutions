@@ -44,10 +44,9 @@ h5{
 }
 
 h1{
-    display: flex;
-    -ms-flex-pack: center;
+
     justify-content: center;
-    -ms-flex-align: center;
+
     text-align: center;
     padding: 50px;
     background-color: #42a1f4;

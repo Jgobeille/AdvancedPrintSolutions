@@ -73,10 +73,9 @@ h3{
     -moz-transition: all 0.3s;
     transition: all 0.3s;
     margin-bottom: 100px;
-    display: flex;
-    -ms-flex-pack: center;
+
     justify-content: center;
-    -ms-flex-align: center;
+
     align-items: center;
 }
 
