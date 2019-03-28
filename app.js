@@ -400,11 +400,11 @@ app.post('/send', upload, function(req, res){
 
 // create reusable transporter object using the default SMTP transport
 let transporter = nodemailer.createTransport({
-    host: 'mail.cincytechblog.com',
+    host: 'a2plcpnl0049.prod.iad2.secureserver.net',
         port: 465,
         secure: true, // true for 465, false for other ports
         auth: {
-            user: "advancedprintsolutions@cincytechblog.com", // generated ethereal user
+            user: "mail@advancedprintsolutions.net", // generated ethereal user
             pass: "Bengals2020" // generated ethereal password
         },
         tls: {
@@ -414,8 +414,8 @@ let transporter = nodemailer.createTransport({
 
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"Nodemailer Contact" <advancedprintsolutions@cincytechblog.com></br> Embedded image: <img src="cid:batman"/>', // sender address
-        to: 'advancedprintsolutions@cincytechblog.com', // list of receivers
+        from: '"Nodemailer Contact" <mail@advancedprintsolutions.net></br> Embedded image: <img src="cid:batman"/>', // sender address
+        to: 'mail@advancedprintsolutions.net', // list of receivers
         subject: 'New Request', // Subject line
         text: 'You have a new request', // plain text body
         html: output, // html body
