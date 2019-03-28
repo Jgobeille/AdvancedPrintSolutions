@@ -20,6 +20,7 @@
     "express": "^4.16.3",
     "express-messages": "^1.0.1",
     "express-session": "^1.15.6",
+    "express-sslify": "^1.2.0",
     "file-system": "^2.2.2",
     "formidable": "^1.2.1",
     "multer": "^1.4.1",

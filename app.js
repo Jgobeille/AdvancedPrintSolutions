@@ -10,7 +10,8 @@ const flash      = require('connect-flash');
 const ejs        = require('ejs');
 const multer     = require('multer');
 const path       = require('path');
-
+const http       = require('http');
+const enforce    = require('express-sslify');
 
 
 
@@ -21,6 +22,8 @@ app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.set('views',__dirname+'/views');
 
+//SSL enforce
+app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
 
 
